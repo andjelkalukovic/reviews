@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import people from './data';
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
-import {BsCaretLeft, BsCaretRight} from 'react-icons/bs'
-import {ImQuotesRight} from "react-icons/im";
+import { BsCaretLeft, BsCaretRight } from 'react-icons/bs'
+import { ImQuotesRight } from "react-icons/im";
 
 const Review = () => {
     const [index, setIndex] = useState(0);
@@ -58,7 +58,9 @@ const Review = () => {
                 </div>
 
                 <div>
+                    {/* eslint-disable-next-line */}
                     <a onClick={prevPerson} className='icon px-2'><BsCaretLeft /></a>
+                    {/* eslint-disable-next-line */}
                     <a onClick={nextPerson} className='icon px-2'><BsCaretRight /></a>
                 </div>
                 <Button variant="outline-info" onClick={randomPerson} className='mt-3'>Surprise me</Button>{' '}
